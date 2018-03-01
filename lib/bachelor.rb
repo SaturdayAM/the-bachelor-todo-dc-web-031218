@@ -76,5 +76,5 @@ def get_average_age_for_season(data, season)
       end#end each
     end#end if
   end#end each
-  (ages / count).ciel
+  ages / count
 end
