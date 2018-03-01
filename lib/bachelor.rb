@@ -65,7 +65,7 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-  ages = 0
+  ages = 0.0
   count = 0
   data.each do |season_no, arr|
     if season_no.to_s == season
@@ -76,5 +76,5 @@ def get_average_age_for_season(data, season)
       end#end each
     end#end if
   end#end each
-  ages / count 
+  (ages / count).ciel
 end
