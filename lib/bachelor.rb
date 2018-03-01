@@ -76,5 +76,5 @@ def get_average_age_for_season(data, season)
       end#end each
     end#end if
   end#end each
-  to_return
+  count / ages 
 end
