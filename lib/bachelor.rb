@@ -23,6 +23,7 @@ puts get_first_name_of_season_winner(data, "season 19")
 
 def get_contestant_name(data, occupation)
   # code here
+  to_return = ""
   data.each do |season_no, arr|
     arr.each do |innerhash|
       #binding.pry
