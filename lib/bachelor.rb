@@ -24,14 +24,12 @@ puts get_first_name_of_season_winner(data, "season 19")
 def get_contestant_name(data, occupation)
   # code here
   data.each do |season_no, arr|
-    if season_no.to_s == season
       arr.each do |innerhash|
         #binding.pry
-        if innerhash["status"] == "Winner"
-          to_return = innerhash["name"].split.first
+        if innerhash["occupation"] == occupation
+          to_return = innerhash["name"]
         end #end if
       end#end each
-    end#end if
   end#end each
   to_return
 end
