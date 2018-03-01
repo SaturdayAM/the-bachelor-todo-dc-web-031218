@@ -65,4 +65,16 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  ages = 0
+  count = 0
+  data.each do |season_no, arr|
+    if season_no.to_s == season
+      arr.each do |innerhash|
+        #binding.pry
+        ages += innerhash["age"]
+        count += 1
+      end#end each
+    end#end if
+  end#end each
+  to_return
 end
