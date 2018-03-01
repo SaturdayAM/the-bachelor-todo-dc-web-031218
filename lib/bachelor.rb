@@ -51,6 +51,16 @@ end
 
 def get_occupation(data, hometown)
   # code here
+  to_return = ""
+  data.each do |season_no, arr|
+    arr.each do |innerhash|
+      #binding.pry
+      if innerhash["hometown"] == hometown
+        return innerhash["occupation"]
+      end #end if
+    end#end each
+  end#end each
+  to_return
 end
 
 def get_average_age_for_season(data, season)
